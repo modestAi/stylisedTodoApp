@@ -44,10 +44,13 @@ export default function App() {
         dispatch({ type: "ADD", payload: val });
         setPopup([...popup, { uuid: u, type: "green", text: "Added task!" }]);
         handlePopupDeleteTimer(u, 1);
-      } else {
+      } else if (val.length > 75) {
         setPopup([...popup, { type: "red", text: "Too big!", uuid: u }]);
         handlePopupDeleteTimer(u, 1);
       }
+    } else {
+      setPopup([...popup, { type: "red", text: "Can't add whitespace!", uuid: u }]);
+      handlePopupDeleteTimer(u, 1);
     }
     inputRef.current!.value = "";
   };

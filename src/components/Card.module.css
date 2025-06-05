@@ -22,7 +22,6 @@
 .delBtn:hover {
     background-color: rgb(221, 58, 58);
     cursor: pointer;
-    /* color remains white, already set */
 }
 
 /* ---------- Card Background Variants ---------- */
@@ -60,8 +59,7 @@
     padding: 0 1em;
     border-radius: 3px;
     border-left: 10px solid rgba(33, 25, 107, 0.315);
-    transition: clip-path 1.25s ease-in-out, border-left 0.4s ease-in-out, transform 0.4s ease-in-out;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%, 0% 90%, 0% 0%);
+    transition:  border-left 0.4s ease-in-out, transform 0.4s ease-in-out;;
     max-width: 100%;
 }
 
