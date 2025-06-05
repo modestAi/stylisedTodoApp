@@ -1,0 +1,38 @@
+:root {
+    --linear-grid-add-btn: linear-gradient(30deg,
+            transparent,
+            rgba(68, 0, 255, 0.089),
+            transparent,
+            rgba(89, 56, 179, 0.11),
+            transparent,
+            transparent,
+            rgba(21, 16, 71, 0.308));
+
+    --linear-grid-form: linear-gradient(30deg,
+            #8b70ed0c,
+            rgba(146, 192, 245, 0.075),
+            #affadd18,
+            transparent,
+            transparent,
+            #69aaf027);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100vw;
+    background-color: hsl(235, 23%, 9%);
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    border: none;
+}

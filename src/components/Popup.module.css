@@ -1,0 +1,20 @@
+.Popup {
+    padding: 0.5em 1em;
+    margin-bottom: 3px;
+
+}
+
+.greenBg {
+    position: relative;
+    background-color: rgb(120, 233, 167);
+    color: rgb(0, 71, 33);
+    border: 2px solid rgb(0, 71, 33);
+    font-size: 12px;
+}
+
+.redBg {
+    background-color: rgb(253, 208, 208);
+    color: rgb(211, 0, 70);
+    border: 2px solid rgb(211, 0, 70);
+    font-size: 12px;
+}

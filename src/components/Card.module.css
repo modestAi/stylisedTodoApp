@@ -1,0 +1,72 @@
+/* ---------- Task Paragraph Styling ---------- */
+.taskPara {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-wrap;
+    max-width: 100%;
+    color: whitesmoke;
+}
+
+/* ---------- Delete Button ---------- */
+.delBtn {
+    background-color: rgb(220, 86, 105);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.2em 0.4em;
+    border-radius: 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+.delBtn:hover {
+    background-color: rgb(221, 58, 58);
+    cursor: pointer;
+    /* color remains white, already set */
+}
+
+/* ---------- Card Background Variants ---------- */
+
+
+/* For completed tasks */
+.cardBgGreen {
+    background-color: rgba(241, 208, 61, 0.041);
+    max-width: 100%;
+}
+
+.cardBgGreen p {
+    text-decoration: line-through;
+    color: rgb(113, 223, 103);
+}
+
+/*Form Uncompleted Tasks*/
+.cardBgRed {
+    background-color: rgba(226, 138, 243, 0.027);
+    max-width: 100%;
+}
+
+.cardBgRed p {
+    color: rgb(233, 165, 153);
+}
+
+
+/* ---------- Card Component ---------- */
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 0 1em;
+    border-radius: 3px;
+    border-left: 10px solid rgba(33, 25, 107, 0.315);
+    transition: clip-path 1.25s ease-in-out, border-left 0.4s ease-in-out, transform 0.4s ease-in-out;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%, 0% 90%, 0% 0%);
+    max-width: 100%;
+}
+
+.card:hover {
+
+    border-left: 10px solid rgba(153, 3, 66, 0.952);
+    transform: translateY(-4px);
+}

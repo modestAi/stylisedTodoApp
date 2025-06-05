@@ -1,0 +1,54 @@
+/* ---------- Form Layout ---------- */
+
+.formElement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+    width: 100%;
+    padding: 1em;
+    border-radius: 2px;
+    background-image: var(--linear-grid-form);
+    box-shadow: inset 3px 2px 20px rgba(202, 24, 68, 0.164);
+}
+
+/* ---------- Buttons ---------- */
+.addBtn {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 30px;
+    color: #ffffff;
+    background-color: hsla(355, 73%, 78%, 0.1);
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.25s ease-in;
+    background-image: var(--linear-grid-add-btn);
+    position: relative;
+    box-shadow: inset 0px 0px 10px rgba(187, 130, 163, 0.1);
+}
+
+.addBtn:hover {
+    box-shadow: inset 0px -5px 10px rgba(216, 52, 79, 0.486);
+    background-color: hsla(355, 73%, 78%, 0.04);
+}
+
+
+.addBtn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background-color: rgb(243, 40, 67);
+    box-shadow: 0 3px 6px rgb(255, 0, 34);
+    transition: all 0.2s ease-out;
+}
+
+.addBtn:hover::after {
+    width: 100%;
+}
